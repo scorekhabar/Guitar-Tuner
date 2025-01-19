@@ -2,7 +2,8 @@
 layout: post
 title: "About Bundler"
 categories: [Jekyll]
-image: assets/images/2.jpg
+image:
+  path: assets/images/2.jpg
 author: false
 ---
 

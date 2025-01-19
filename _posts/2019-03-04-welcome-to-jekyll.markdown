@@ -2,7 +2,8 @@
 layout: post
 title: "Welcome to Jekyll!"
 categories: [Jekyll]
-image: assets/images/demo1.jpg
+image:
+  path: assets/images/demo1.jpg
 author: jane
 ---
 

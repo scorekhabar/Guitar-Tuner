@@ -193,11 +193,11 @@ layout: default
       {% if page.previous.url %}
       <div class="col-md-6 rightborder pl-0">
         <a class="text-dark" href="{{ site.baseurl }}{{ page.previous.url }}"
-          >{% if page.previous.image %}
+          >{% if page.previous.image.path %}
           <img
             height="30px"
             class="mr-1"
-            src="{{site.baseurl}}/{{page.previous.image}}"
+            src="{{site.baseurl}}/{{page.previous.image.path}}"
           />
           {% endif %} {{page.previous.title}}</a
         >
@@ -205,12 +205,8 @@ layout: default
       {% endif %} {% if page.next.url %}
       <div class="col-md-6 text-right pr-0">
         <a class="text-dark" href="{{ site.baseurl }}{{ page.next.url }}">
-          {{page.next.title}} {% if page.next.image %}
-          <img
-            height="30px"
-            class="ml-1"
-            src="{{site.baseurl}}/{{page.next.image}}"
-          />
+          {{page.next.title}} {% if page.next.image.path %}
+          <img height="30px" class="ml-1" src="{{page.next.image.path}}" />
           {% endif %}</a
         >
       </div>

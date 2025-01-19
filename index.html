@@ -56,12 +56,16 @@ uses_tuner_script: true
       <!-- third latest post -->
       {%- assign third_post = site.posts[2] -%}
       <div class="mb-3 d-flex align-items-center">
-        {% if third_post.image %}
+        {% if third_post.image.path %}
         <div class="col-md-4">
           <a href="{{site.baseurl}}{{third_post.url}}">
-            <img class="w-100" src="{% if third_post.image contains "://" %}{{
-            third_post.image }}{% else %}{{site.baseurl}}/{{ third_post.image
-            }}{% endif %}" alt="{{ third_post.title }}">
+            <img
+              class="w-100"
+              src='{% if third_post.image.path contains "://"
+            %}{{ third_post.image.path }}{% else %}{{site.baseurl}}/{{
+            third_post.image.path }}{% endif %}'
+              alt="{{ third_post.title }}"
+            />
           </a>
         </div>
         {% endif %}
@@ -92,12 +96,16 @@ uses_tuner_script: true
       <!-- fourth latest post -->
       {%- assign fourth_post = site.posts[3] -%}
       <div class="mb-3 d-flex align-items-center">
-        {% if fourth_post.image %}
+        {% if fourth_post.path %}
         <div class="col-md-4">
           <a href="{{site.baseurl}}{{fourth_post.url}}">
-            <img class="w-100" src="{% if fourth_post.image contains "://" %}{{
-            fourth_post.image }}{% else %}{{site.baseurl}}/{{ fourth_post.image
-            }}{% endif %}" alt="{{ fourth_post.title }}">
+            <img
+              class="w-100"
+              src='{% if fourth_post.image.path contains "://" %}{{
+            fourth_post.image.path }}{% else %}{{site.baseurl}}/{{ fourth_post.image.path
+            }}{% endif %}'
+              alt="{{ fourth_post.title }}"
+            />
           </a>
         </div>
         {% endif %}
