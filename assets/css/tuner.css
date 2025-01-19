@@ -1,0 +1,178 @@
+/* html {
+  height: 100%;
+} */
+
+.tuner {
+  border: 2px solid grey;
+  width: 100%; /* Example width */
+  height: 100%; /* Example height */
+  position: relative;
+
+  display: flex;
+  flex-direction: column; /* Change to row to align elements side by side */
+  justify-content: space-between; /* Distribute space between elements */
+  align-items: center;
+  padding: 15px;
+  margin-top: 2px;
+  background-color: rgb(0 0 0 / 40%);
+}
+
+.position-absolute {
+  position: absolute !important;
+  z-index: 1000;
+}
+
+.notes {
+  width: 100%; /* Adjust width as needed */
+  height: 30%;
+  text-align: center;
+  position: relative;
+  /* padding-top: 10px; */
+}
+
+.meter {
+  width: 100%; /* Adjust width as needed */
+  height: 100%; /* Ensure it fits the .tuner height */
+  text-align: center;
+  position: relative;
+}
+
+.note {
+  font-size: 65px;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  padding-right: 20px;
+  padding-left: 5px;
+}
+
+.note.active {
+  color: #e74c3c;
+}
+
+.notes-list {
+  overflow: auto;
+  overflow: -moz-scrollbars-none;
+  white-space: nowrap;
+  -ms-overflow-style: none;
+  -webkit-mask-image: -webkit-linear-gradient(
+    left,
+    rgba(255, 255, 255, 0),
+    #fff,
+    rgba(255, 255, 255, 0)
+  );
+}
+
+.notes-list::-webkit-scrollbar {
+  display: none;
+}
+
+.note {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.note span {
+  position: absolute;
+  right: 0.25em;
+  font-size: 40%;
+  font-weight: normal;
+}
+
+.note-sharp {
+  top: 0.1em;
+}
+
+.note-octave {
+  bottom: 0.3em;
+}
+
+.frequency {
+  font-size: 32px;
+  display: none;
+}
+
+.frequency span {
+  font-size: 50%;
+  margin-left: 0.25em;
+}
+
+.meter-pointer {
+  width: 2px;
+  height: 100%;
+  background: #2c3e50;
+  transform: rotate(45deg);
+  transform-origin: bottom;
+  transition: transform 0.5s;
+  position: absolute;
+  right: 50%;
+}
+
+.meter-dot {
+  width: 10px;
+  height: 10px;
+  background: #2c3e50;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -5px;
+  right: 50%;
+  margin-right: -4px;
+}
+
+.meter-scale {
+  width: 1px;
+  height: 100%;
+  transform-origin: bottom;
+  transition: transform 0.2s;
+  box-sizing: border-box;
+  border-top: 10px solid;
+  position: absolute;
+  right: 50%;
+}
+
+.meter-scale-strong {
+  width: 2px;
+  border-top-width: 20px;
+}
+
+.frequency-bars {
+  position: fixed;
+  bottom: 0;
+}
+
+@media (max-width: 767px) {
+  .tuner {
+    height: 300px;
+    margin-bottom: 15px;
+  }
+}
+
+/* @media (max-width: 912px) {
+  .tuner {
+    height: 300px;
+  }
+
+  .meter {
+    height: 62%;
+  }
+} */
+
+.swal-button {
+  background: #2c3e50;
+}
+
+.a4 {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  display: none;
+}
+
+.a4 span {
+  color: #e74c3c;
+}
+
+.auto {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
