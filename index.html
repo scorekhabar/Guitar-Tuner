@@ -3,7 +3,7 @@ title: "Online Free Guitar Tuner"
 layout: default
 pagination:
   enabled: true
-description: "A great Jekyll theme developed by Sal"
+description: "Tune your guitar online with a microphone! The guitar tuner will determine the frequency of the sound and help you to correctly adjust each string."
 uses_tuner_script: true
 ---
 
@@ -23,9 +23,13 @@ uses_tuner_script: true
         {% if second_post.image %}
         <div class="col-md-4">
           <a href="{{site.baseurl}}{{second_post.url}}">
-            <img class="w-100" src="{% if second_post.image contains "://" %}{{
+            <img
+              class="w-100"
+              src='{% if second_post.image contains "://" %}{{
             second_post.image }}{% else %}{{ second_post.image | absolute_url
-            }}{% endif %}" alt="{{ second_post.title }}">
+            }}{% endif %}'
+              alt="{{ second_post.title }}"
+            />
           </a>
         </div>
         {% endif %}
@@ -153,7 +157,7 @@ uses_tuner_script: true
         </div>
         <div
           class="col-md-6 d-none d-md-block pr-0"
-          style="background-size:cover;background-image:url({{site.baseurl}}/{{ post.image }});"
+          style="background-size: cover; background-image: url('{{ site.baseurl }}/{{ post.image }}');"
         ></div>
       </div>
     </div>

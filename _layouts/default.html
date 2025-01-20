@@ -13,20 +13,105 @@
     <meta name="robots" content="noindex, follow" />
     {% else %}
     <meta name="robots" content="noindex, follow" />
-    {% endif %} {% if page.url == '/' %}
-    <title>{{site.name}}</title>
-    {% elsif page.url contains '/tag' or page.url contains '/category' %}
+    {% endif %}
     <title>{{page.title | capitalize}} | {{site.name}}</title>
-    {% else %}
-    <title>{{page.title}} | {{site.name}}</title>
-    {% endif %} {% seo title=false %}
+    {% seo title=false %}
     <meta name="keywords" content="online guitar tuner" />
-    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/images/icons/guitar_tuner_16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/icons/guitar_tuner_32.png"
+    />
     <link
       rel="icon"
       type="image/png"
       sizes="48x48"
-      href="/assets/images/m2W_32.png"
+      href="assets/images/icons/guitar_tuner_48.png"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="assets/images/icons/favicon.ico"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="assets/images/icons/guitar_tuner_57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="assets/images/icons/guitar_tuner_60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="assets/images/icons/guitar_tuner_72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="assets/images/icons/guitar_tuner_76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="assets/images/icons/guitar_tuner_114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="assets/images/icons/guitar_tuner_120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="assets/images/icons/guitar_tuner_144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="assets/images/icons/guitar_tuner_152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/images/icons/guitar_tuner_180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="assets/images/icons/guitar_tuner_192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="256x256"
+      href="assets/images/icons/guitar_tuner_256.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="384x384"
+      href="assets/images/icons/guitar_tuner_384.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="assets/images/icons/guitar_tuner_512.png"
+    />
+    <meta
+      name="msapplication-TileImage"
+      content="assets/images/icons/guitar_tuner_144.png"
     />
     <!-- Font Awesome Icons -->
     <link

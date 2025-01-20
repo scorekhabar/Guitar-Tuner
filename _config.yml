@@ -1,11 +1,11 @@
 # Site
 name: "Guitar Tuner"
-description: "Mundana is a free Jekyll theme for awesome people like you, Medium like."
-logo: "assets/images/logo.png"
-favicon: "assets/images/favicon.ico"
+description: ""
+logo: "assets/images/icons/guitar_tuner_512.png"
+favicon: "assets/images/icons/favicon.ico"
 baseurl: ""
 email: ""
-mailchimp-list: "https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b"
+mailchimp-list: ""
 comments: false
 
 include: ["_pages"]
