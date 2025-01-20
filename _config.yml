@@ -76,3 +76,7 @@ exclude:
 
 sitemap:
   enabled: false
+
+jekyll-minifier:
+  uglifier_args:
+    harmony: true
