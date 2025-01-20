@@ -19,7 +19,7 @@ layout: default
               {% for category in page.categories %}
               <a
                 class="sscroll text-danger"
-                href="{{site.baseurl}}/category/{{ category }}"
+                href="{{site.baseurl}}/category/{{ category | slugify }}"
                 >{{ category | downcase }}</a
               ><span class="sep"> | </span>
               {% endfor %}
