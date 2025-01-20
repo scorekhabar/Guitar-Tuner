@@ -19,6 +19,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-archives
   - jekyll-minifier
+  - jekyll-dotenv
 
 jekyll-archives:
   enabled:
