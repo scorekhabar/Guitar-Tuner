@@ -18,6 +18,7 @@ plugins:
   - jekyll-paginate
   - jekyll-seo-tag
   - jekyll-archives
+  - jekyll-minifier
 
 jekyll-archives:
   enabled:
